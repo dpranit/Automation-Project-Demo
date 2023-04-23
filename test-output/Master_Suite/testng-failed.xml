@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Master_Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Regression_Test_Cases(failed)">
+    <classes>
+      <class name="calendar_booking_tests.Test_Counselling_Appointment_Flow">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_FrontDesk_is_able_to_book_Counselling_appointment"/>
+        </methods>
+      </class> <!-- calendar_booking_tests.Test_Counselling_Appointment_Flow -->
+      <class name="calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session"/>
+        </methods>
+      </class> <!-- calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar -->
+      <class name="payments_tests.Test_NewCreditNote">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_CreditNote_Filters_Open"/>
+        </methods>
+      </class> <!-- payments_tests.Test_NewCreditNote -->
+      <class name="payments_tests.Test_CreditNote_from_Invoice">
+        <methods>
+          <include name="teardown"/>
+          <include name="Test_Delete_CreditNote_Invoice" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="Test_Create_CreditNote_From_Invoice"/>
+        </methods>
+      </class> <!-- payments_tests.Test_CreditNote_from_Invoice -->
+    </classes>
+  </test> <!-- Regression_Test_Cases(failed) -->
+</suite> <!-- Failed suite [Master_Suite] -->

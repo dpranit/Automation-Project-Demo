@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-30T20:04:25 IST" name="Master_Suite" finished-at="2022-11-30T20:06:26 IST" duration-ms="121218">
+    <groups>
+      <group name="">
+        <method signature="Test_NewFeedback.Share_Feedback_Through_Mail()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" name="Share_Feedback_Through_Mail" class="feedback_tests.Test_NewFeedback"/>
+        <method signature="Test_NewFeedback.Share_Feedback_Through_Whatsapp()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" name="Share_Feedback_Through_Whatsapp" class="feedback_tests.Test_NewFeedback"/>
+      </group> <!--  -->
+      <group name="Regresion">
+        <method signature="Test_NewFeedback.Create_Feedback()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" name="Create_Feedback" class="feedback_tests.Test_NewFeedback"/>
+      </group> <!-- Regresion -->
+    </groups>
+    <test started-at="2022-11-30T20:04:25 IST" name="Regression_Test_Cases" finished-at="2022-11-30T20:06:26 IST" duration-ms="121218">
+      <class name="feedback_tests.Test_NewFeedback">
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:04:25 IST" name="setup" finished-at="2022-11-30T20:04:39 IST" duration-ms="14253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_Feedback()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:04:39 IST" name="Create_Feedback" finished-at="2022-11-30T20:04:52 IST" duration-ms="12823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Feedback -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:04:52 IST" name="teardown" finished-at="2022-11-30T20:05:08 IST" duration-ms="16125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:05:08 IST" name="setup" finished-at="2022-11-30T20:05:22 IST" duration-ms="13306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Share_Feedback_Through_Mail()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:05:22 IST" name="Share_Feedback_Through_Mail" finished-at="2022-11-30T20:05:33 IST" duration-ms="11804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Share_Feedback_Through_Mail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:05:33 IST" name="teardown" finished-at="2022-11-30T20:05:50 IST" duration-ms="16202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:05:50 IST" name="setup" finished-at="2022-11-30T20:06:01 IST" duration-ms="10878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Share_Feedback_Through_Whatsapp()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:06:01 IST" name="Share_Feedback_Through_Whatsapp" finished-at="2022-11-30T20:06:10 IST" duration-ms="9600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Share_Feedback_Through_Whatsapp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@7582ff54]" started-at="2022-11-30T20:06:10 IST" name="teardown" finished-at="2022-11-30T20:06:26 IST" duration-ms="16177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- feedback_tests.Test_NewFeedback -->
+    </test> <!-- Regression_Test_Cases -->
+  </suite> <!-- Master_Suite -->
+</testng-results>

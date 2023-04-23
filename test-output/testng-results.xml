@@ -1,0 +1,2222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="92" passed="82" failed="10" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-17T13:40:45 IST" name="Master _Suite" finished-at="2023-04-17T14:29:03 IST" duration-ms="2898250">
+    <groups>
+      <group name="">
+        <method signature="Test_NewFeedback.Share_Feedback_Through_Mail()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" name="Share_Feedback_Through_Mail" class="feedback_tests.Test_NewFeedback"/>
+      </group> <!--  -->
+      <group name="SuperDoctor">
+        <method signature="Test_CreditNote_from_Invoice.Test_Create_CreditNote_From_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" name="Test_Create_CreditNote_From_Invoice" class="payments_tests.Test_CreditNote_from_Invoice"/>
+        <method signature="Test_CreditNote_from_Invoice.Test_Delete_CreditNote_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" name="Test_Delete_CreditNote_Invoice" class="payments_tests.Test_CreditNote_from_Invoice"/>
+        <method signature="Test_Deleting_CreditNote.Test_Delete_Recently_Created_CreditNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" name="Test_Delete_Recently_Created_CreditNote" class="payments_tests.Test_Deleting_CreditNote"/>
+        <method signature="Test_NewCreditNote.Test_Create_CreditNote_For_Product(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" name="Test_Create_CreditNote_For_Product" class="payments_tests.Test_NewCreditNote"/>
+        <method signature="Test_CalculateCost.Test_Calculate_Cost_For_Procedure(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" name="Test_Calculate_Cost_For_Procedure" class="costCalculator_tests.Test_CalculateCost"/>
+        <method signature="Test_Calculations_In_CreditNotes.Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" name="Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit" class="payments_tests.Test_Calculations_In_CreditNotes"/>
+        <method signature="Test_Calculations_In_Payments.Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Calculations_In_Payments@49c90a9c]" name="Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit" class="payments_tests.Test_Calculations_In_Payments"/>
+        <method signature="Test_Calender_Functionality_In_Payments.Test_Invoice_Calender_Opening()[pri:0, instance:payments_tests.Test_Calender_Functionality_In_Payments@2d29b4ee]" name="Test_Invoice_Calender_Opening" class="payments_tests.Test_Calender_Functionality_In_Payments"/>
+        <method signature="Test_Create_RetainerInvoice.Create_New_RetainerInvoice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" name="Create_New_RetainerInvoice" class="payments_tests.Test_Create_RetainerInvoice"/>
+        <method signature="Test_Login_For_Different_Roles.Test_SuperDoctor_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_SuperDoctor_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+        <method signature="Test_NewFeedback.Create_Feedback()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" name="Create_Feedback" class="feedback_tests.Test_NewFeedback"/>
+        <method signature="Test_NewFeedback.Share_Feedback_Through_Whatsapp()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" name="Share_Feedback_Through_Whatsapp" class="feedback_tests.Test_NewFeedback"/>
+        <method signature="Test_NewPatients_Registration.Test_Patient_Image_Upload(java.lang.String)[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" name="Test_Patient_Image_Upload" class="patients_tests.Test_NewPatients_Registration"/>
+        <method signature="Test_NewPatients_Registration.Test_RegisterNew_Patient_With_Unique_PhoneNumber(java.lang.String)[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" name="Test_RegisterNew_Patient_With_Unique_PhoneNumber" class="patients_tests.Test_NewPatients_Registration"/>
+      </group> <!-- SuperDoctor -->
+      <group name="Thearpist">
+        <method signature="Test_Login_For_Different_Roles.Test_Therpist_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_Therpist_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- Thearpist -->
+      <group name="FrontDesk">
+        <method signature="Test_Login_For_Different_Roles.Test_FrontDesk_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_FrontDesk_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- FrontDesk -->
+      <group name="Doctor">
+        <method signature="Test_Login_For_Different_Roles.Test_Doctor_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_Doctor_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- Doctor -->
+      <group name="Manager">
+        <method signature="Test_Login_For_Different_Roles.Test_Manager_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_Manager_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- Manager -->
+      <group name="SuperAdmin">
+        <method signature="Test_Login_For_Different_Roles.Test_SuperAdmin_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_SuperAdmin_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- SuperAdmin -->
+      <group name="Counsultant">
+        <method signature="Test_Login_For_Different_Roles.Test_Consultatnt_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" name="Test_Consultatnt_is_able_to_Login_Application" class="login_Roles_tests.Test_Login_For_Different_Roles"/>
+      </group> <!-- Counsultant -->
+    </groups>
+    <test started-at="2023-04-17T13:40:45 IST" name="Regression_Test_Cases" finished-at="2023-04-17T14:29:03 IST" duration-ms="2898250">
+      <class name="superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T13:59:48 IST" name="setup" finished-at="2023-04-17T14:00:01 IST" duration-ms="12706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:01 IST" name="Test_SuperDoctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen" finished-at="2023-04-17T14:00:11 IST" duration-ms="9865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:11 IST" name="teardown" finished-at="2023-04-17T14:00:11 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:11 IST" name="setup" finished-at="2023-04-17T14:00:25 IST" duration-ms="14531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:25 IST" name="Test_SuperDoctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen" finished-at="2023-04-17T14:00:36 IST" duration-ms="10533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:36 IST" name="teardown" finished-at="2023-04-17T14:00:36 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:36 IST" name="setup" finished-at="2023-04-17T14:00:48 IST" duration-ms="11930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:48 IST" name="Test_SuperDoctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen" finished-at="2023-04-17T14:00:59 IST" duration-ms="10868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229]" started-at="2023-04-17T14:00:59 IST" name="teardown" finished-at="2023-04-17T14:00:59 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters -->
+      <class name="frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen">
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:02:47 IST" name="setup" finished-at="2023-04-17T14:03:01 IST" duration-ms="13893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_check_CancelledSessions()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:01 IST" name="Test_FrontDesk_is_able_to_check_CancelledSessions" finished-at="2023-04-17T14:03:19 IST" duration-ms="17266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_check_CancelledSessions -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:19 IST" name="teardown" finished-at="2023-04-17T14:03:19 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:19 IST" name="setup" finished-at="2023-04-17T14:03:31 IST" duration-ms="12696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_check_DraftedSessions()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:31 IST" name="Test_FrontDesk_is_able_to_check_DraftedSessions" finished-at="2023-04-17T14:03:47 IST" duration-ms="15825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_check_DraftedSessions -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:47 IST" name="teardown" finished-at="2023-04-17T14:03:48 IST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:03:48 IST" name="setup" finished-at="2023-04-17T14:04:02 IST" duration-ms="14724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_check_ScheduledSessions()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:04:02 IST" name="Test_FrontDesk_is_able_to_check_ScheduledSessions" finished-at="2023-04-17T14:04:17 IST" duration-ms="14701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_check_ScheduledSessions -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455]" started-at="2023-04-17T14:04:17 IST" name="teardown" finished-at="2023-04-17T14:04:17 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen -->
+      <class name="superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:04:33 IST" name="setup" finished-at="2023-04-17T14:04:44 IST" duration-ms="11359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_Able_To_AddNew_Room()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:04:44 IST" name="Test_SuperDoctor_is_Able_To_AddNew_Room" finished-at="2023-04-17T14:04:59 IST" duration-ms="15102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_Able_To_AddNew_Room -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:04:59 IST" name="teardown" finished-at="2023-04-17T14:05:00 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:05:00 IST" name="setup" finished-at="2023-04-17T14:05:12 IST" duration-ms="12555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_Functionality_in_Rooms()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:05:12 IST" name="Test_Search_Functionality_in_Rooms" finished-at="2023-04-17T14:05:22 IST" depends-on-methods="superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room.Test_SuperDoctor_is_Able_To_AddNew_Room" duration-ms="9953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_Functionality_in_Rooms -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741]" started-at="2023-04-17T14:05:22 IST" name="teardown" finished-at="2023-04-17T14:05:22 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room -->
+      <class name="superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:11:13 IST" name="setup" finished-at="2023-04-17T14:11:25 IST" duration-ms="12529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_add_consultation()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:11:25 IST" name="Test_SuperDoctor_is_able_to_add_consultation" finished-at="2023-04-17T14:11:49 IST" duration-ms="23221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_add_consultation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:11:49 IST" name="teardown" finished-at="2023-04-17T14:11:49 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:11:49 IST" name="setup" finished-at="2023-04-17T14:12:02 IST" duration-ms="13492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:12:02 IST" name="Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft" finished-at="2023-04-17T14:12:17 IST" duration-ms="14569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:12:17 IST" name="teardown" finished-at="2023-04-17T14:12:17 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:12:17 IST" name="setup" finished-at="2023-04-17T14:12:31 IST" duration-ms="13995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_resume_Drafted_consultation()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:12:31 IST" name="Test_SuperDoctor_is_able_to_resume_Drafted_consultation" finished-at="2023-04-17T14:12:43 IST" depends-on-methods="superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation.Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft" duration-ms="11980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_resume_Drafted_consultation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa]" started-at="2023-04-17T14:12:43 IST" name="teardown" finished-at="2023-04-17T14:12:43 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation -->
+      <class name="frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole">
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:15:28 IST" name="setup" finished-at="2023-04-17T14:15:41 IST" duration-ms="13009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_DoctorNamein_ConsultationsScreen()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:15:41 IST" name="Test_Search_By_DoctorNamein_ConsultationsScreen" finished-at="2023-04-17T14:15:58 IST" duration-ms="16534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_DoctorNamein_ConsultationsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:15:58 IST" name="teardown" finished-at="2023-04-17T14:15:58 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:15:58 IST" name="setup" finished-at="2023-04-17T14:16:12 IST" duration-ms="13420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_DoctorNamein_appointmentsScreen()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:16:12 IST" name="Test_Search_By_DoctorNamein_appointmentsScreen" finished-at="2023-04-17T14:16:42 IST" duration-ms="30692" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Doctor']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79762d9e2793347efeb4b4cde0fadf54, findElement {using=xpath, value=//label[text()='Doctor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55455/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79762d9e2793347efeb4b4cde0fadf54]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Doctor']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79762d9e2793347efeb4b4cde0fadf54, findElement {using=xpath, value=//label[text()='Doctor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55455/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79762d9e2793347efeb4b4cde0fadf54
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_DoctorNamein_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_DoctorNamein_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:16:42 IST" name="teardown" finished-at="2023-04-17T14:16:43 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:16:43 IST" name="setup" finished-at="2023-04-17T14:16:58 IST" duration-ms="15904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_ConsultationsScreen()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:16:58 IST" name="Test_Search_By_PatientName_in_ConsultationsScreen" finished-at="2023-04-17T14:17:14 IST" duration-ms="15514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_ConsultationsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:17:14 IST" name="teardown" finished-at="2023-04-17T14:17:14 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:17:14 IST" name="setup" finished-at="2023-04-17T14:17:29 IST" duration-ms="14333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_appointmentsScreen()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:17:29 IST" name="Test_Search_By_PatientName_in_appointmentsScreen" finished-at="2023-04-17T14:18:00 IST" duration-ms="31796" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cc59a6f04aa024c8f0b37069867ee17, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55543/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cc59a6f04aa024c8f0b37069867ee17]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cc59a6f04aa024c8f0b37069867ee17, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55543/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cc59a6f04aa024c8f0b37069867ee17
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_PatientName_in_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47]" started-at="2023-04-17T14:18:00 IST" name="teardown" finished-at="2023-04-17T14:18:01 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole -->
+      <class name="consultant_tests.Test_Consultant_is_able_to_access_filters">
+        <test-method is-config="true" signature="setup()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:51:58 IST" name="setup" finished-at="2023-04-17T13:52:10 IST" duration-ms="12773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Consultant_is_able_to_apply_Consultationfilter_in_appointmentsScreen()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:10 IST" name="Test_Consultant_is_able_to_apply_Consultationfilter_in_appointmentsScreen" finished-at="2023-04-17T13:52:22 IST" duration-ms="11615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Consultant_is_able_to_apply_Consultationfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:22 IST" name="teardown" finished-at="2023-04-17T13:52:22 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:22 IST" name="setup" finished-at="2023-04-17T13:52:34 IST" duration-ms="12267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Consultant_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:34 IST" name="Test_Consultant_is_able_to_apply_Counsellingfilter_in_appointmentsScreen" finished-at="2023-04-17T13:52:45 IST" duration-ms="10628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Consultant_is_able_to_apply_Counsellingfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:45 IST" name="teardown" finished-at="2023-04-17T13:52:45 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:52:45 IST" name="setup" finished-at="2023-04-17T13:53:01 IST" duration-ms="15848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Consultant_is_able_to_apply_Sessionfilter_in_appointmentsScreen()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:53:01 IST" name="Test_Consultant_is_able_to_apply_Sessionfilter_in_appointmentsScreen" finished-at="2023-04-17T13:53:12 IST" duration-ms="11077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Consultant_is_able_to_apply_Sessionfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712]" started-at="2023-04-17T13:53:12 IST" name="teardown" finished-at="2023-04-17T13:53:12 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- consultant_tests.Test_Consultant_is_able_to_access_filters -->
+      <class name="login_Roles_tests.Test_Login_For_Different_Roles">
+        <test-method signature="Test_Consultatnt_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:45:06 IST" name="Test_Consultatnt_is_able_to_Login_Application" finished-at="2023-04-17T13:45:22 IST" duration-ms="16711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Consultatnt_is_able_to_Login_Application -->
+        <test-method signature="Test_Doctor_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:45:22 IST" name="Test_Doctor_is_able_to_Login_Application" finished-at="2023-04-17T13:45:42 IST" duration-ms="19841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Doctor_is_able_to_Login_Application -->
+        <test-method signature="Test_FrontDesk_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:45:42 IST" name="Test_FrontDesk_is_able_to_Login_Application" finished-at="2023-04-17T13:45:59 IST" duration-ms="17295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_Login_Application -->
+        <test-method signature="Test_Manager_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:45:59 IST" name="Test_Manager_is_able_to_Login_Application" finished-at="2023-04-17T13:46:18 IST" duration-ms="18677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Manager_is_able_to_Login_Application -->
+        <test-method signature="Test_SuperAdmin_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:46:18 IST" name="Test_SuperAdmin_is_able_to_Login_Application" finished-at="2023-04-17T13:46:37 IST" duration-ms="18497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperAdmin_is_able_to_Login_Application -->
+        <test-method signature="Test_SuperDoctor_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:46:37 IST" name="Test_SuperDoctor_is_able_to_Login_Application" finished-at="2023-04-17T13:46:57 IST" duration-ms="20010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_Login_Application -->
+        <test-method signature="Test_Therpist_is_able_to_Login_Application()[pri:0, instance:login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368]" started-at="2023-04-17T13:46:57 IST" name="Test_Therpist_is_able_to_Login_Application" finished-at="2023-04-17T13:47:14 IST" duration-ms="17359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Therpist_is_able_to_Login_Application -->
+      </class> <!-- login_Roles_tests.Test_Login_For_Different_Roles -->
+      <class name="patients_tests.Test_NewPatients_Registration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:47:14 IST" name="setup" finished-at="2023-04-17T13:47:26 IST" duration-ms="12241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Patient_Image_Upload(java.lang.String)[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:47:26 IST" name="Test_Patient_Image_Upload" data-provider="TestData" finished-at="2023-04-17T13:47:50 IST" duration-ms="23680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sumit Kale]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Patient_Image_Upload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:47:50 IST" name="teardown" finished-at="2023-04-17T13:47:50 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:47:50 IST" name="setup" finished-at="2023-04-17T13:48:03 IST" duration-ms="12402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_RegisterNew_Patient_With_Unique_PhoneNumber(java.lang.String)[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:48:03 IST" name="Test_RegisterNew_Patient_With_Unique_PhoneNumber" data-provider="TestData" finished-at="2023-04-17T13:48:19 IST" duration-ms="16580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sumit Kale]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_RegisterNew_Patient_With_Unique_PhoneNumber -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:patients_tests.Test_NewPatients_Registration@1c9b0314]" started-at="2023-04-17T13:48:19 IST" name="teardown" finished-at="2023-04-17T13:48:19 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- patients_tests.Test_NewPatients_Registration -->
+      <class name="payments_tests.Test_Create_RetainerInvoice">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:09:25 IST" name="setup" finished-at="2023-04-17T14:09:38 IST" duration-ms="13033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_New_RetainerInvoice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:09:38 IST" name="Create_New_RetainerInvoice" data-provider="TestData" finished-at="2023-04-17T14:10:01 IST" duration-ms="22974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pranit Dhole]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_New_RetainerInvoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:01 IST" name="teardown" finished-at="2023-04-17T14:10:01 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:01 IST" name="setup" finished-at="2023-04-17T14:10:15 IST" duration-ms="14090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_New_RetainerInvoice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:15 IST" name="Create_New_RetainerInvoice" data-provider="TestData" finished-at="2023-04-17T14:10:35 IST" duration-ms="19705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[UPI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_New_RetainerInvoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:35 IST" name="teardown" finished-at="2023-04-17T14:10:35 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:35 IST" name="setup" finished-at="2023-04-17T14:10:49 IST" duration-ms="13885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_New_RetainerInvoice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:10:49 IST" name="Create_New_RetainerInvoice" data-provider="TestData" finished-at="2023-04-17T14:11:13 IST" duration-ms="23585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samuel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Card]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_New_RetainerInvoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Create_RetainerInvoice@69ee81fc]" started-at="2023-04-17T14:11:13 IST" name="teardown" finished-at="2023-04-17T14:11:13 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_Create_RetainerInvoice -->
+      <class name="doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status">
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status@2fb0623e]" started-at="2023-04-17T14:00:59 IST" name="setup" finished-at="2023-04-17T14:01:12 IST" duration-ms="12937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Doctor_Booking_Consultation_Appointment()[pri:1, instance:doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status@2fb0623e]" started-at="2023-04-17T14:01:12 IST" name="Test_Doctor_Booking_Consultation_Appointment" finished-at="2023-04-17T14:01:51 IST" duration-ms="38967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Doctor_Booking_Consultation_Appointment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status@2fb0623e]" started-at="2023-04-17T14:01:51 IST" name="teardown" finished-at="2023-04-17T14:01:51 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status -->
+      <class name="frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status">
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:07:23 IST" name="setup" finished-at="2023-04-17T14:07:35 IST" duration-ms="11954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkin()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:07:35 IST" name="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkin" finished-at="2023-04-17T14:08:07 IST" duration-ms="31404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:07 IST" name="teardown" finished-at="2023-04-17T14:08:07 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:07 IST" name="setup" finished-at="2023-04-17T14:08:20 IST" duration-ms="13210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkout()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:20 IST" name="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkout" finished-at="2023-04-17T14:08:31 IST" duration-ms="11333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:31 IST" name="teardown" finished-at="2023-04-17T14:08:32 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:32 IST" name="setup" finished-at="2023-04-17T14:08:45 IST" duration-ms="13117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Confirmed()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:45 IST" name="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Confirmed" finished-at="2023-04-17T14:08:57 IST" duration-ms="12005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_change_patient_journey_status_to_Confirmed -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:57 IST" name="teardown" finished-at="2023-04-17T14:08:57 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:08:57 IST" name="setup" finished-at="2023-04-17T14:09:11 IST" duration-ms="13902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Engaged()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:09:11 IST" name="Test_FrontDesk_is_able_to_change_patient_journey_status_to_Engaged" finished-at="2023-04-17T14:09:25 IST" duration-ms="13802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_change_patient_journey_status_to_Engaged -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb]" started-at="2023-04-17T14:09:25 IST" name="teardown" finished-at="2023-04-17T14:09:25 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status -->
+      <class name="payments_tests.Test_Calender_Functionality_In_Payments">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Calender_Functionality_In_Payments@2d29b4ee]" started-at="2023-04-17T14:04:17 IST" name="setup" finished-at="2023-04-17T14:04:33 IST" duration-ms="15402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Invoice_Calender_Opening()[pri:0, instance:payments_tests.Test_Calender_Functionality_In_Payments@2d29b4ee]" started-at="2023-04-17T14:04:33 IST" name="Test_Invoice_Calender_Opening" finished-at="2023-04-17T14:04:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Invoice_Calender_Opening -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Calender_Functionality_In_Payments@2d29b4ee]" started-at="2023-04-17T14:04:33 IST" name="teardown" finished-at="2023-04-17T14:04:33 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_Calender_Functionality_In_Payments -->
+      <class name="superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:49:26 IST" name="setup" finished-at="2023-04-17T13:49:40 IST" duration-ms="13858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_DoctorNamein_ConsultationsScreen()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:49:40 IST" name="Test_Search_By_DoctorNamein_ConsultationsScreen" finished-at="2023-04-17T13:49:56 IST" duration-ms="15621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_DoctorNamein_ConsultationsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:49:56 IST" name="teardown" finished-at="2023-04-17T13:49:56 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:49:56 IST" name="setup" finished-at="2023-04-17T13:50:08 IST" duration-ms="12513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_DoctorNamein_appointmentsScreen()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:50:08 IST" name="Test_Search_By_DoctorNamein_appointmentsScreen" finished-at="2023-04-17T13:50:41 IST" duration-ms="32498" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Doctor']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e20bd23b3126cd08cc2fcbdbb69d9954, findElement {using=xpath, value=//label[text()='Doctor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53495/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e20bd23b3126cd08cc2fcbdbb69d9954]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Doctor']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e20bd23b3126cd08cc2fcbdbb69d9954, findElement {using=xpath, value=//label[text()='Doctor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53495/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e20bd23b3126cd08cc2fcbdbb69d9954
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_DoctorNamein_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_DoctorNamein_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:50:41 IST" name="teardown" finished-at="2023-04-17T13:50:41 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:50:41 IST" name="setup" finished-at="2023-04-17T13:50:54 IST" duration-ms="12709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_ConsultationsScreen()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:50:54 IST" name="Test_Search_By_PatientName_in_ConsultationsScreen" finished-at="2023-04-17T13:51:11 IST" duration-ms="17213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_ConsultationsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:51:11 IST" name="teardown" finished-at="2023-04-17T13:51:11 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:51:11 IST" name="setup" finished-at="2023-04-17T13:51:25 IST" duration-ms="13900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_appointmentsScreen()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:51:25 IST" name="Test_Search_By_PatientName_in_appointmentsScreen" finished-at="2023-04-17T13:51:57 IST" duration-ms="32224" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [95d13783ff6cffa524eba171d64a0362, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53580/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d13783ff6cffa524eba171d64a0362]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [95d13783ff6cffa524eba171d64a0362, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53580/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d13783ff6cffa524eba171d64a0362
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871]" started-at="2023-04-17T13:51:57 IST" name="teardown" finished-at="2023-04-17T13:51:58 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role -->
+      <class name="calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar">
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar@6d5620ce]" started-at="2023-04-17T14:06:38 IST" name="setup" finished-at="2023-04-17T14:06:49 IST" duration-ms="11295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session()[pri:0, instance:calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar@6d5620ce]" started-at="2023-04-17T14:06:49 IST" name="Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session" finished-at="2023-04-17T14:07:23 IST" duration-ms="34105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar@6d5620ce]" started-at="2023-04-17T14:07:23 IST" name="teardown" finished-at="2023-04-17T14:07:23 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar -->
+      <class name="payments_tests.Test_Deleting_CreditNote">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:21:51 IST" name="setup" finished-at="2023-04-17T14:22:04 IST" duration-ms="13277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Delete_Recently_Created_CreditNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:22:04 IST" name="Test_Delete_Recently_Created_CreditNote" data-provider="ProcedureTestData" finished-at="2023-04-17T14:22:39 IST" duration-ms="34826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Delete_Recently_Created_CreditNote -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:22:39 IST" name="teardown" finished-at="2023-04-17T14:22:39 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:22:39 IST" name="setup" finished-at="2023-04-17T14:22:51 IST" duration-ms="12111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Delete_Recently_Created_CreditNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:22:51 IST" name="Test_Delete_Recently_Created_CreditNote" data-provider="ProcedureTestData" finished-at="2023-04-17T14:23:26 IST" duration-ms="34409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Delete_Recently_Created_CreditNote -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Deleting_CreditNote@1224144a]" started-at="2023-04-17T14:23:26 IST" name="teardown" finished-at="2023-04-17T14:23:26 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_Deleting_CreditNote -->
+      <class name="accountant_tests.Test_Accountant_is_able_to_make_Payment">
+        <test-method is-config="true" signature="setup()[pri:0, instance:accountant_tests.Test_Accountant_is_able_to_make_Payment@2f67a4d3]" started-at="2023-04-17T13:53:12 IST" name="setup" finished-at="2023-04-17T13:53:25 IST" duration-ms="12546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Accountant_is_able_to_make_Payment()[pri:0, instance:accountant_tests.Test_Accountant_is_able_to_make_Payment@2f67a4d3]" started-at="2023-04-17T13:53:25 IST" name="Test_Accountant_is_able_to_make_Payment" finished-at="2023-04-17T13:53:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Accountant_is_able_to_make_Payment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:accountant_tests.Test_Accountant_is_able_to_make_Payment@2f67a4d3]" started-at="2023-04-17T13:53:25 IST" name="teardown" finished-at="2023-04-17T13:53:25 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- accountant_tests.Test_Accountant_is_able_to_make_Payment -->
+      <class name="costCalculator_tests.Test_CalculateCost">
+        <test-method is-config="true" signature="setup()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:43:12 IST" name="setup" finished-at="2023-04-17T13:43:25 IST" duration-ms="12518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Calculate_Cost_For_Procedure(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:43:25 IST" name="Test_Calculate_Cost_For_Procedure" data-provider="Details" finished-at="2023-04-17T13:43:55 IST" duration-ms="30551" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smaran]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dermal Fillers]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slider round']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fab206bd37237fac2bfebb88b4b20d8, findElement {using=xpath, value=//span[@class='slider round']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52927/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fab206bd37237fac2bfebb88b4b20d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slider round']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fab206bd37237fac2bfebb88b4b20d8, findElement {using=xpath, value=//span[@class='slider round']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52927/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fab206bd37237fac2bfebb88b4b20d8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Calculate_Cost_For_Procedure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:43:55 IST" name="teardown" finished-at="2023-04-17T13:43:56 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:43:56 IST" name="setup" finished-at="2023-04-17T13:44:07 IST" duration-ms="11725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Calculate_Cost_For_Procedure(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:44:07 IST" name="Test_Calculate_Cost_For_Procedure" data-provider="Details" finished-at="2023-04-17T13:44:37 IST" duration-ms="30010" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pico Toning]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slider round']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81c14d3515c125fc02c1d0af4dd6d16f, findElement {using=xpath, value=//span[@class='slider round']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52966/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81c14d3515c125fc02c1d0af4dd6d16f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slider round']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81c14d3515c125fc02c1d0af4dd6d16f, findElement {using=xpath, value=//span[@class='slider round']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52966/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81c14d3515c125fc02c1d0af4dd6d16f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Calculate_Cost_For_Procedure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:44:37 IST" name="teardown" finished-at="2023-04-17T13:44:38 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:44:38 IST" name="setup" finished-at="2023-04-17T13:44:52 IST" duration-ms="14115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_View_Quotation()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:44:52 IST" name="Test_SuperDoctor_View_Quotation" finished-at="2023-04-17T13:45:05 IST" duration-ms="13664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_View_Quotation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:costCalculator_tests.Test_CalculateCost@5efa40fe]" started-at="2023-04-17T13:45:05 IST" name="teardown" finished-at="2023-04-17T13:45:06 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- costCalculator_tests.Test_CalculateCost -->
+      <class name="frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen">
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:55:22 IST" name="setup" finished-at="2023-04-17T13:55:34 IST" duration-ms="12640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_AllFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:55:34 IST" name="Test_FrontDesk_is_able_to_AllFilter" finished-at="2023-04-17T13:55:50 IST" duration-ms="15276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_AllFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:55:50 IST" name="teardown" finished-at="2023-04-17T13:55:50 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:55:50 IST" name="setup" finished-at="2023-04-17T13:56:03 IST" duration-ms="12735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_Apply_PatientStaus_AllFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:03 IST" name="Test_FrontDesk_is_able_to_Apply_PatientStaus_AllFilter" finished-at="2023-04-17T13:56:16 IST" duration-ms="13674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_Apply_PatientStaus_AllFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:16 IST" name="teardown" finished-at="2023-04-17T13:56:16 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:16 IST" name="setup" finished-at="2023-04-17T13:56:30 IST" duration-ms="13238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckOutFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:30 IST" name="Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckOutFilter" finished-at="2023-04-17T13:56:45 IST" duration-ms="15121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckOutFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:45 IST" name="teardown" finished-at="2023-04-17T13:56:45 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:45 IST" name="setup" finished-at="2023-04-17T13:56:59 IST" duration-ms="13553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckinFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:56:59 IST" name="Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckinFilter" finished-at="2023-04-17T13:57:14 IST" duration-ms="15557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckinFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:14 IST" name="teardown" finished-at="2023-04-17T13:57:14 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:14 IST" name="setup" finished-at="2023-04-17T13:57:27 IST" duration-ms="12408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_Apply_PatientStaus_EngagedFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:27 IST" name="Test_FrontDesk_is_able_to_Apply_PatientStaus_EngagedFilter" finished-at="2023-04-17T13:57:40 IST" duration-ms="13663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_Apply_PatientStaus_EngagedFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:40 IST" name="teardown" finished-at="2023-04-17T13:57:41 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:41 IST" name="setup" finished-at="2023-04-17T13:57:56 IST" duration-ms="15163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_CancelledFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:57:56 IST" name="Test_FrontDesk_is_able_to_CancelledFilter" finished-at="2023-04-17T13:58:10 IST" duration-ms="14819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_CancelledFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:10 IST" name="teardown" finished-at="2023-04-17T13:58:11 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:11 IST" name="setup" finished-at="2023-04-17T13:58:25 IST" duration-ms="13914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_DraftFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:25 IST" name="Test_FrontDesk_is_able_to_DraftFilter" finished-at="2023-04-17T13:58:41 IST" duration-ms="16005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_DraftFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:41 IST" name="teardown" finished-at="2023-04-17T13:58:41 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:41 IST" name="setup" finished-at="2023-04-17T13:58:54 IST" duration-ms="13409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_ScheduledFilter()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:58:54 IST" name="Test_FrontDesk_is_able_to_ScheduledFilter" finished-at="2023-04-17T13:59:09 IST" duration-ms="14932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_ScheduledFilter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4]" started-at="2023-04-17T13:59:09 IST" name="teardown" finished-at="2023-04-17T13:59:10 IST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen -->
+      <class name="calendar_booking_tests.Test_Consultation_Appointment_Flow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Consultation_Appointment_Flow@5be1d0a4]" started-at="2023-04-17T13:54:38 IST" name="setup" finished-at="2023-04-17T13:54:52 IST" duration-ms="13815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_book_consultation_appointment()[pri:0, instance:calendar_booking_tests.Test_Consultation_Appointment_Flow@5be1d0a4]" started-at="2023-04-17T13:54:52 IST" name="Test_FrontDesk_is_able_to_book_consultation_appointment" finished-at="2023-04-17T13:55:21 IST" duration-ms="29389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_book_consultation_appointment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Consultation_Appointment_Flow@5be1d0a4]" started-at="2023-04-17T13:55:21 IST" name="teardown" finished-at="2023-04-17T13:55:22 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- calendar_booking_tests.Test_Consultation_Appointment_Flow -->
+      <class name="doctor_tests.Test_SearxhFunctionality_in_Doctor_Role">
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:05:22 IST" name="setup" finished-at="2023-04-17T14:05:37 IST" duration-ms="14433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_ConsultationsScreen()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:05:37 IST" name="Test_Search_By_PatientName_in_ConsultationsScreen" finished-at="2023-04-17T14:05:52 IST" duration-ms="14811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_ConsultationsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:05:52 IST" name="teardown" finished-at="2023-04-17T14:05:52 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:05:52 IST" name="setup" finished-at="2023-04-17T14:06:06 IST" duration-ms="14456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_By_PatientName_in_appointmentsScreen()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:06:06 IST" name="Test_Search_By_PatientName_in_appointmentsScreen" finished-at="2023-04-17T14:06:37 IST" duration-ms="31242" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83abd4098aa95591700b9a37732d793f, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54778/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83abd4098aa95591700b9a37732d793f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Patient']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83abd4098aa95591700b9a37732d793f, findElement {using=xpath, value=//label[text()='Patient']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54778/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83abd4098aa95591700b9a37732d793f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at doctor_tests.Test_SearxhFunctionality_in_Doctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearxhFunctionality_in_Doctor_Role.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_By_PatientName_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d]" started-at="2023-04-17T14:06:37 IST" name="teardown" finished-at="2023-04-17T14:06:38 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- doctor_tests.Test_SearxhFunctionality_in_Doctor_Role -->
+      <class name="calendar_booking_tests.Test_Session_Appointment_Booking_Flow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:12:43 IST" name="setup" finished-at="2023-04-17T14:12:55 IST" duration-ms="12141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_book_session_for_Doctor()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:12:55 IST" name="Test_FrontDesk_is_able_to_book_session_for_Doctor" finished-at="2023-04-17T14:13:38 IST" duration-ms="42513" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c589f7fcae857b3a43d52bae8f14620b, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55285/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c589f7fcae857b3a43d52bae8f14620b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c589f7fcae857b3a43d52bae8f14620b, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55285/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c589f7fcae857b3a43d52bae8f14620b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Doctor(Test_Session_Appointment_Booking_Flow.java:122)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_book_session_for_Doctor -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:13:38 IST" name="teardown" finished-at="2023-04-17T14:13:38 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:13:38 IST" name="setup" finished-at="2023-04-17T14:13:51 IST" duration-ms="12654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_book_session_for_Superdoctor()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:13:51 IST" name="Test_FrontDesk_is_able_to_book_session_for_Superdoctor" finished-at="2023-04-17T14:14:33 IST" duration-ms="41937" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35ebbe9febb0b37ee83fba486cbdb036, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35ebbe9febb0b37ee83fba486cbdb036]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35ebbe9febb0b37ee83fba486cbdb036, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35ebbe9febb0b37ee83fba486cbdb036
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Superdoctor(Test_Session_Appointment_Booking_Flow.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_book_session_for_Superdoctor -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:14:33 IST" name="teardown" finished-at="2023-04-17T14:14:33 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:14:33 IST" name="setup" finished-at="2023-04-17T14:14:45 IST" duration-ms="12618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_book_session_for_Therapist()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:14:45 IST" name="Test_FrontDesk_is_able_to_book_session_for_Therapist" finished-at="2023-04-17T14:15:28 IST" duration-ms="42809" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2667ff808757b1eea3dfe94e176af43f, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55368/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2667ff808757b1eea3dfe94e176af43f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type Patient Name']"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2667ff808757b1eea3dfe94e176af43f, findElement {using=xpath, value=//input[@placeholder='Type Patient Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55368/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2667ff808757b1eea3dfe94e176af43f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Therapist(Test_Session_Appointment_Booking_Flow.java:192)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_book_session_for_Therapist -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055]" started-at="2023-04-17T14:15:28 IST" name="teardown" finished-at="2023-04-17T14:15:28 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- calendar_booking_tests.Test_Session_Appointment_Booking_Flow -->
+      <class name="superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:20:14 IST" name="setup" finished-at="2023-04-17T14:20:28 IST" duration-ms="13731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Mobility_Fixed_Filter_in_Equipments()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:20:28 IST" name="Test_Mobility_Fixed_Filter_in_Equipments" finished-at="2023-04-17T14:20:38 IST" duration-ms="10229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Mobility_Fixed_Filter_in_Equipments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:20:38 IST" name="teardown" finished-at="2023-04-17T14:20:38 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:20:38 IST" name="setup" finished-at="2023-04-17T14:20:51 IST" duration-ms="13491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Mobility_Mobile_Filter_in_Equipments()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:20:51 IST" name="Test_Mobility_Mobile_Filter_in_Equipments" finished-at="2023-04-17T14:21:08 IST" duration-ms="16382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Mobility_Mobile_Filter_in_Equipments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:08 IST" name="teardown" finished-at="2023-04-17T14:21:08 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:08 IST" name="setup" finished-at="2023-04-17T14:21:19 IST" duration-ms="10979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Search_in_Equipments()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:19 IST" name="Test_Search_in_Equipments" finished-at="2023-04-17T14:21:30 IST" duration-ms="10997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Search_in_Equipments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:30 IST" name="teardown" finished-at="2023-04-17T14:21:30 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:30 IST" name="setup" finished-at="2023-04-17T14:21:43 IST" duration-ms="12635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_add_new_Equipment()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:43 IST" name="Test_SuperDoctor_is_able_to_add_new_Equipment" finished-at="2023-04-17T14:21:51 IST" duration-ms="8130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_add_new_Equipment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29]" started-at="2023-04-17T14:21:51 IST" name="teardown" finished-at="2023-04-17T14:21:51 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment -->
+      <class name="feedback_tests.Test_NewFeedback">
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:40:45 IST" name="setup" finished-at="2023-04-17T13:40:59 IST" duration-ms="13572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Create_Feedback()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:40:59 IST" name="Create_Feedback" finished-at="2023-04-17T13:41:10 IST" duration-ms="10970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Feedback -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:10 IST" name="teardown" finished-at="2023-04-17T13:41:10 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:10 IST" name="setup" finished-at="2023-04-17T13:41:23 IST" duration-ms="13669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Share_Feedback_Through_Mail()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:23 IST" name="Share_Feedback_Through_Mail" finished-at="2023-04-17T13:41:33 IST" duration-ms="9936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Share_Feedback_Through_Mail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:33 IST" name="teardown" finished-at="2023-04-17T13:41:34 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:34 IST" name="setup" finished-at="2023-04-17T13:41:47 IST" duration-ms="13891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Share_Feedback_Through_Whatsapp()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:41:47 IST" name="Share_Feedback_Through_Whatsapp" finished-at="2023-04-17T13:42:00 IST" duration-ms="12934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Share_Feedback_Through_Whatsapp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:feedback_tests.Test_NewFeedback@1b1cfb87]" started-at="2023-04-17T13:42:00 IST" name="teardown" finished-at="2023-04-17T13:42:01 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- feedback_tests.Test_NewFeedback -->
+      <class name="payments_tests.Test_Calculations_In_CreditNotes">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:48:19 IST" name="setup" finished-at="2023-04-17T13:48:32 IST" duration-ms="12546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:48:32 IST" name="Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit" data-provider="ProcedureTestData1" finished-at="2023-04-17T13:48:53 IST" duration-ms="20745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:48:53 IST" name="teardown" finished-at="2023-04-17T13:48:53 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:48:53 IST" name="setup" finished-at="2023-04-17T13:49:04 IST" duration-ms="11413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:49:04 IST" name="Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit" data-provider="ProcedureTestData1" finished-at="2023-04-17T13:49:26 IST" duration-ms="21639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Calculations_In_CreditNotes@45385f75]" started-at="2023-04-17T13:49:26 IST" name="teardown" finished-at="2023-04-17T13:49:26 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_Calculations_In_CreditNotes -->
+      <class name="doctor_tests.Test_Doctor_is_able_to_access_filters">
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:53:25 IST" name="setup" finished-at="2023-04-17T13:53:37 IST" duration-ms="12282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Doctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:53:37 IST" name="Test_Doctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen" finished-at="2023-04-17T13:53:48 IST" duration-ms="10982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Doctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:53:48 IST" name="teardown" finished-at="2023-04-17T13:53:48 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:53:48 IST" name="setup" finished-at="2023-04-17T13:54:04 IST" duration-ms="15469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Doctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:54:04 IST" name="Test_Doctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen" finished-at="2023-04-17T13:54:15 IST" duration-ms="10856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Doctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:54:15 IST" name="teardown" finished-at="2023-04-17T13:54:15 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:54:15 IST" name="setup" finished-at="2023-04-17T13:54:29 IST" duration-ms="13624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Doctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:54:29 IST" name="Test_Doctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen" finished-at="2023-04-17T13:54:38 IST" duration-ms="9445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Doctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861]" started-at="2023-04-17T13:54:38 IST" name="teardown" finished-at="2023-04-17T13:54:38 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- doctor_tests.Test_Doctor_is_able_to_access_filters -->
+      <class name="payments_tests.Test_NewCreditNote">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:25:29 IST" name="setup" finished-at="2023-04-17T14:25:45 IST" duration-ms="16030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_For_Procedure(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:25:45 IST" name="Test_Create_CreditNote_For_Procedure" data-provider="ProcedureTestData" finished-at="2023-04-17T14:26:11 IST" duration-ms="26008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1500]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_For_Procedure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:26:11 IST" name="teardown" finished-at="2023-04-17T14:26:12 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:26:12 IST" name="setup" finished-at="2023-04-17T14:26:23 IST" duration-ms="11658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_For_Procedure(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:26:23 IST" name="Test_Create_CreditNote_For_Procedure" data-provider="ProcedureTestData" finished-at="2023-04-17T14:26:50 IST" duration-ms="27058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Procedure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_For_Procedure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:26:50 IST" name="teardown" finished-at="2023-04-17T14:26:50 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:26:50 IST" name="setup" finished-at="2023-04-17T14:27:02 IST" duration-ms="11158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_For_Product(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:27:02 IST" name="Test_Create_CreditNote_For_Product" data-provider="ProductTestData" finished-at="2023-04-17T14:27:28 IST" duration-ms="26004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Product]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_For_Product -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:27:28 IST" name="teardown" finished-at="2023-04-17T14:27:28 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:27:28 IST" name="setup" finished-at="2023-04-17T14:27:41 IST" duration-ms="12520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_For_Product(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:27:41 IST" name="Test_Create_CreditNote_For_Product" data-provider="ProductTestData" finished-at="2023-04-17T14:28:06 IST" duration-ms="25104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vijay K]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Product]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_For_Product -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:06 IST" name="teardown" finished-at="2023-04-17T14:28:06 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:06 IST" name="setup" finished-at="2023-04-17T14:28:20 IST" duration-ms="14666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_CreditNote_Filters_Close()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:20 IST" name="Test_CreditNote_Filters_Close" finished-at="2023-04-17T14:28:36 IST" duration-ms="15049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreditNote_Filters_Close -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:36 IST" name="teardown" finished-at="2023-04-17T14:28:36 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:36 IST" name="setup" finished-at="2023-04-17T14:28:49 IST" duration-ms="13338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_CreditNote_Filters_Open()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:28:49 IST" name="Test_CreditNote_Filters_Open" finished-at="2023-04-17T14:29:03 IST" duration-ms="14073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreditNote_Filters_Open -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_NewCreditNote@29f7cefd]" started-at="2023-04-17T14:29:03 IST" name="teardown" finished-at="2023-04-17T14:29:03 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_NewCreditNote -->
+      <class name="payments_tests.Test_CreditNote_from_Invoice">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:18:01 IST" name="setup" finished-at="2023-04-17T14:18:15 IST" duration-ms="14815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_From_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:18:15 IST" name="Test_Create_CreditNote_From_Invoice" data-provider="TestData" finished-at="2023-04-17T14:18:32 IST" duration-ms="16832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sakshi D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_From_Invoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:18:32 IST" name="teardown" finished-at="2023-04-17T14:18:32 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:18:32 IST" name="setup" finished-at="2023-04-17T14:18:48 IST" duration-ms="15335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Create_CreditNote_From_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:18:48 IST" name="Test_Create_CreditNote_From_Invoice" data-provider="TestData" finished-at="2023-04-17T14:19:03 IST" duration-ms="15162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kalpana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_CreditNote_From_Invoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:03 IST" name="teardown" finished-at="2023-04-17T14:19:03 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:03 IST" name="setup" finished-at="2023-04-17T14:19:17 IST" duration-ms="14059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Delete_CreditNote_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:17 IST" name="Test_Delete_CreditNote_Invoice" data-provider="TestData" finished-at="2023-04-17T14:19:37 IST" depends-on-methods="payments_tests.Test_CreditNote_from_Invoice.Test_Create_CreditNote_From_Invoice" duration-ms="19709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sakshi D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Delete_CreditNote_Invoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:37 IST" name="teardown" finished-at="2023-04-17T14:19:37 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:37 IST" name="setup" finished-at="2023-04-17T14:19:52 IST" duration-ms="14559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Delete_CreditNote_Invoice(java.lang.String)[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:19:52 IST" name="Test_Delete_CreditNote_Invoice" data-provider="TestData" finished-at="2023-04-17T14:20:14 IST" depends-on-methods="payments_tests.Test_CreditNote_from_Invoice.Test_Create_CreditNote_From_Invoice" duration-ms="22035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kalpana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Delete_CreditNote_Invoice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_CreditNote_from_Invoice@f58853c]" started-at="2023-04-17T14:20:14 IST" name="teardown" finished-at="2023-04-17T14:20:14 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_CreditNote_from_Invoice -->
+      <class name="frontdesk_tests.Test_FrontDesk_is_able_to_access_filters">
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:01 IST" name="setup" finished-at="2023-04-17T13:42:14 IST" duration-ms="12995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_apply_Consultationfilter_in_appointmentsScreen()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:14 IST" name="Test_FrontDesk_is_able_to_apply_Consultationfilter_in_appointmentsScreen" finished-at="2023-04-17T13:42:26 IST" duration-ms="12605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_apply_Consultationfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:26 IST" name="teardown" finished-at="2023-04-17T13:42:26 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:26 IST" name="setup" finished-at="2023-04-17T13:42:39 IST" duration-ms="12792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:39 IST" name="Test_FrontDesk_is_able_to_apply_Counsellingfilter_in_appointmentsScreen" finished-at="2023-04-17T13:42:50 IST" duration-ms="10642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_apply_Counsellingfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:50 IST" name="teardown" finished-at="2023-04-17T13:42:50 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:42:50 IST" name="setup" finished-at="2023-04-17T13:43:02 IST" duration-ms="12151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_apply_Sessionfilter_in_appointmentsScreen()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:43:02 IST" name="Test_FrontDesk_is_able_to_apply_Sessionfilter_in_appointmentsScreen" finished-at="2023-04-17T13:43:12 IST" duration-ms="9993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_apply_Sessionfilter_in_appointmentsScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9]" started-at="2023-04-17T13:43:12 IST" name="teardown" finished-at="2023-04-17T13:43:12 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- frontdesk_tests.Test_FrontDesk_is_able_to_access_filters -->
+      <class name="superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status">
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:23:26 IST" name="setup" finished-at="2023-04-17T14:23:38 IST" duration-ms="11550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkin()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:23:38 IST" name="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkin" finished-at="2023-04-17T14:24:09 IST" duration-ms="31766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:09 IST" name="teardown" finished-at="2023-04-17T14:24:10 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:10 IST" name="setup" finished-at="2023-04-17T14:24:23 IST" duration-ms="13546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkout()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:23 IST" name="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkout" finished-at="2023-04-17T14:24:36 IST" duration-ms="12912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:36 IST" name="teardown" finished-at="2023-04-17T14:24:36 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:36 IST" name="setup" finished-at="2023-04-17T14:24:50 IST" duration-ms="13580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Confirmed()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:24:50 IST" name="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Confirmed" finished-at="2023-04-17T14:25:02 IST" duration-ms="11902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Confirmed -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:25:02 IST" name="teardown" finished-at="2023-04-17T14:25:02 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:25:02 IST" name="setup" finished-at="2023-04-17T14:25:15 IST" duration-ms="13533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Engaged()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:25:15 IST" name="Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Engaged" finished-at="2023-04-17T14:25:29 IST" duration-ms="13915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Engaged -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390]" started-at="2023-04-17T14:25:29 IST" name="teardown" finished-at="2023-04-17T14:25:29 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status -->
+      <class name="payments_tests.Test_Calculations_In_Payments">
+        <test-method is-config="true" signature="setup()[pri:0, instance:payments_tests.Test_Calculations_In_Payments@49c90a9c]" started-at="2023-04-17T13:59:10 IST" name="setup" finished-at="2023-04-17T13:59:23 IST" duration-ms="13256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:payments_tests.Test_Calculations_In_Payments@49c90a9c]" started-at="2023-04-17T13:59:23 IST" name="Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit" data-provider="ProductTestData" finished-at="2023-04-17T13:59:48 IST" duration-ms="25112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Credit Note]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Product]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:payments_tests.Test_Calculations_In_Payments@49c90a9c]" started-at="2023-04-17T13:59:48 IST" name="teardown" finished-at="2023-04-17T13:59:48 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- payments_tests.Test_Calculations_In_Payments -->
+      <class name="calendar_booking_tests.Test_Counselling_Appointment_Flow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:calendar_booking_tests.Test_Counselling_Appointment_Flow@415b0b49]" started-at="2023-04-17T14:01:51 IST" name="setup" finished-at="2023-04-17T14:02:05 IST" duration-ms="13332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_FrontDesk_is_able_to_book_Counselling_appointment()[pri:0, instance:calendar_booking_tests.Test_Counselling_Appointment_Flow@415b0b49]" started-at="2023-04-17T14:02:05 IST" name="Test_FrontDesk_is_able_to_book_Counselling_appointment" finished-at="2023-04-17T14:02:47 IST" duration-ms="42515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_FrontDesk_is_able_to_book_Counselling_appointment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:calendar_booking_tests.Test_Counselling_Appointment_Flow@415b0b49]" started-at="2023-04-17T14:02:47 IST" name="teardown" finished-at="2023-04-17T14:02:47 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- calendar_booking_tests.Test_Counselling_Appointment_Flow -->
+    </test> <!-- Regression_Test_Cases -->
+  </suite> <!-- Master _Suite -->
+</testng-results>

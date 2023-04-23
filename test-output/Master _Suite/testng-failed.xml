@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Master _Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Regression_Test_Cases(failed)">
+    <classes>
+      <class name="superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role">
+        <methods>
+          <include name="Test_Search_By_PatientName_in_appointmentsScreen"/>
+          <include name="teardown"/>
+          <include name="Test_Search_By_DoctorNamein_appointmentsScreen"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role -->
+      <class name="costCalculator_tests.Test_CalculateCost">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_Calculate_Cost_For_Procedure" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- costCalculator_tests.Test_CalculateCost -->
+      <class name="doctor_tests.Test_SearxhFunctionality_in_Doctor_Role">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Test_Search_By_PatientName_in_appointmentsScreen"/>
+        </methods>
+      </class> <!-- doctor_tests.Test_SearxhFunctionality_in_Doctor_Role -->
+      <class name="frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole">
+        <methods>
+          <include name="teardown"/>
+          <include name="Test_Search_By_DoctorNamein_appointmentsScreen"/>
+          <include name="setup"/>
+          <include name="Test_Search_By_PatientName_in_appointmentsScreen"/>
+        </methods>
+      </class> <!-- frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole -->
+      <class name="calendar_booking_tests.Test_Session_Appointment_Booking_Flow">
+        <methods>
+          <include name="Test_FrontDesk_is_able_to_book_session_for_Doctor"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_FrontDesk_is_able_to_book_session_for_Superdoctor"/>
+          <include name="Test_FrontDesk_is_able_to_book_session_for_Therapist"/>
+        </methods>
+      </class> <!-- calendar_booking_tests.Test_Session_Appointment_Booking_Flow -->
+    </classes>
+  </test> <!-- Regression_Test_Cases(failed) -->
+</suite> <!-- Failed suite [Master _Suite] -->

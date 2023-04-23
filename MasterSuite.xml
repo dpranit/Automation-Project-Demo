@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master _Suite">
+<listeners>
+<listener class-name="utils.Listners"></listener>
+</listeners>
+  <test thread-count="5" name="Regression_Test_Cases">
+    <packages>
+    	  <package name="feedback_tests"/>	
+    	  <package name="frontdesk_tests"/>	
+	      <package name="costCalculator_tests"/>	
+	      <package name="login_Roles_tests"/>	
+	      <package name="patients_tests"/>	
+	      <package name="payments_tests"/>	
+		  <package name="superdoctor_tests"></package>
+	      <package name="consultant_tests"></package>
+	      <package name="accountant_tests"></package>
+	      <package name="doctor_tests"></package>
+	      <package name="calendar_booking_tests"></package>
+    </packages>
+  </test> <!-- Regression_Test_Cases -->`
+</suite> <!-- Master_Suite -->

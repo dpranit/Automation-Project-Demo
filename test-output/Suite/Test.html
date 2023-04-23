@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 23 08:14:14 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>796 seconds (796829 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Vijay K, 6000, UPI</td>
+<td></td>
+<td>21</td>
+<td>payments_tests.Test_Create_RetainerInvoice@76f4b65</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Create_CreditNote_From_Invoice()'><b>Create_CreditNote_From_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Vijay K</td>
+<td></td>
+<td>12</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@545b995e</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Create_Feedback()'><b>Create_Feedback</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>18</td>
+<td>feedback_tests.Test_NewFeedback@34c01041</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Create_CreditNote_From_Invoice()'><b>Create_CreditNote_From_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Abhilash</td>
+<td></td>
+<td>13</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@545b995e</td></tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Samuel, 10000, Card</td>
+<td></td>
+<td>23</td>
+<td>payments_tests.Test_Create_RetainerInvoice@76f4b65</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Delete_CreditNote_Invoice()'><b>Delete_CreditNote_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Abhilash</td>
+<td></td>
+<td>10</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@545b995e</td></tr>
+<tr>
+<td title='patients_tests.Test_NewPatients_Registration.Register()'><b>Register</b><br>Test class: patients_tests.Test_NewPatients_Registration<br>Parameters: Sumit Kale</td>
+<td></td>
+<td>12</td>
+<td>patients_tests.Test_NewPatients_Registration@41e68d87</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Share_Feedback_Through_Mail()'><b>Share_Feedback_Through_Mail</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>14</td>
+<td>feedback_tests.Test_NewFeedback@34c01041</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Create_CreditNote_For_Procedure()'><b>Create_CreditNote_For_Procedure</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Vijay K, New Credit Note, Procedure, 1, 3000</td>
+<td></td>
+<td>11</td>
+<td>payments_tests.Test_NewCreditNote@76a2ddf3</td></tr>
+<tr>
+<td title='appointments_tests.Test_Counselling_Appointment_Booking.Book_Counselling_Appoinments()'><b>Book_Counselling_Appoinments</b><br>Test class: appointments_tests.Test_Counselling_Appointment_Booking<br>Parameters: Pranit Dhole</td>
+<td></td>
+<td>31</td>
+<td>appointments_tests.Test_Counselling_Appointment_Booking@32c726ee</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Delete_CreditNote_Invoice()'><b>Delete_CreditNote_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Vijay K</td>
+<td></td>
+<td>13</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@545b995e</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Different_Roles_Login()'><b>Different_Roles_Login</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles<br>Parameters: InvalidDoc, pranit07@gmail.com, AA123456789</td>
+<td></td>
+<td>26</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@524f3b3a</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Different_Roles_Login()'><b>Different_Roles_Login</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles<br>Parameters: Superdoc, dpranit07@gmail.com, Aa123456789</td>
+<td></td>
+<td>30</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@524f3b3a</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Share_Feedback_Through_Whatsapp()'><b>Share_Feedback_Through_Whatsapp</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>10</td>
+<td>feedback_tests.Test_NewFeedback@34c01041</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Different_Roles_Login()'><b>Different_Roles_Login</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles<br>Parameters: Consultant, vahesop275@dakcans.com, Aa123456789</td>
+<td></td>
+<td>34</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@524f3b3a</td></tr>
+<tr>
+<td title='costCalculator_tests.Test_CalculateCost.Tes_Calculate_Cost_For_Procedure()'><b>Tes_Calculate_Cost_For_Procedure</b><br>Test class: costCalculator_tests.Test_CalculateCost<br>Parameters: Smaran, Dermal Fillers, 500</td>
+<td></td>
+<td>12</td>
+<td>costCalculator_tests.Test_CalculateCost@22f31dec</td></tr>
+<tr>
+<td title='costCalculator_tests.Test_CalculateCost.Tes_Calculate_Cost_For_Procedure()'><b>Tes_Calculate_Cost_For_Procedure</b><br>Test class: costCalculator_tests.Test_CalculateCost<br>Parameters: Vijay K, Pico Toning, 1000</td>
+<td></td>
+<td>11</td>
+<td>costCalculator_tests.Test_CalculateCost@22f31dec</td></tr>
+<tr>
+<td title='appointments_tests.Test_Consultation_appointment_Booking.Book_Consultation_Appoinments()'><b>Book_Consultation_Appoinments</b><br>Test class: appointments_tests.Test_Consultation_appointment_Booking<br>Parameters: Pranit Dhole</td>
+<td></td>
+<td>44</td>
+<td>appointments_tests.Test_Consultation_appointment_Booking@ca30bc1</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Different_Roles_Login()'><b>Different_Roles_Login</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles<br>Parameters: Doctor, jeceni6533@pamaweb.com, Aa123456789</td>
+<td></td>
+<td>28</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@524f3b3a</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Create_CreditNote_For_Product()'><b>Create_CreditNote_For_Product</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Vijay K, New Credit Note, Product, 20, 120</td>
+<td></td>
+<td>11</td>
+<td>payments_tests.Test_NewCreditNote@76a2ddf3</td></tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Pranit Dhole, 50000, Cash</td>
+<td></td>
+<td>22</td>
+<td>payments_tests.Test_Create_RetainerInvoice@76f4b65</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Create_CreditNote_For_Product()'><b>Create_CreditNote_For_Product</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Abhilash, New Credit Note, Product, 10, 150</td>
+<td></td>
+<td>16</td>
+<td>payments_tests.Test_NewCreditNote@76a2ddf3</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Different_Roles_Login()'><b>Different_Roles_Login</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles<br>Parameters: InvalidSuperdoc, pranit07@gmail.com, AA123456789</td>
+<td></td>
+<td>28</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@524f3b3a</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Create_CreditNote_For_Procedure()'><b>Create_CreditNote_For_Procedure</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Abhilash, New Credit Note, Procedure, 2, 1500</td>
+<td></td>
+<td>15</td>
+<td>payments_tests.Test_NewCreditNote@76a2ddf3</td></tr>
+</table><p>
+</body>
+</html>

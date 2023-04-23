@@ -1,0 +1,1365 @@
+<html>
+<head>
+<title>TestNG:  Regression_Test_Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression_Test_Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>82/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 17 13:40:45 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>2898 seconds (2898250 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_DoctorNamein_appointmentsScreen()'><b>Test_Search_By_DoctorNamein_appointmentsScreen</b><br>Test class: frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Doctor&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79762d9e2793347efeb4b4cde0fadf54, findElement {using=xpath, value=//label[text()=&apos;Doctor&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55455/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79762d9e2793347efeb4b4cde0fadf54
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_DoctorNamein_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1851950547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1851950547'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Doctor&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79762d9e2793347efeb4b4cde0fadf54, findElement {using=xpath, value=//label[text()=&apos;Doctor&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55455/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79762d9e2793347efeb4b4cde0fadf54
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_DoctorNamein_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47</td></tr>
+<tr>
+<td title='doctor_tests.Test_SearxhFunctionality_in_Doctor_Role.Test_Search_By_PatientName_in_appointmentsScreen()'><b>Test_Search_By_PatientName_in_appointmentsScreen</b><br>Test class: doctor_tests.Test_SearxhFunctionality_in_Doctor_Role</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83abd4098aa95591700b9a37732d793f, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54778/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83abd4098aa95591700b9a37732d793f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at doctor_tests.Test_SearxhFunctionality_in_Doctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearxhFunctionality_in_Doctor_Role.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785598481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785598481'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83abd4098aa95591700b9a37732d793f, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54778/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83abd4098aa95591700b9a37732d793f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at doctor_tests.Test_SearxhFunctionality_in_Doctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearxhFunctionality_in_Doctor_Role.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_PatientName_in_appointmentsScreen()'><b>Test_Search_By_PatientName_in_appointmentsScreen</b><br>Test class: frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cc59a6f04aa024c8f0b37069867ee17, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55543/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cc59a6f04aa024c8f0b37069867ee17
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_PatientName_in_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace678802960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace678802960'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cc59a6f04aa024c8f0b37069867ee17, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55543/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cc59a6f04aa024c8f0b37069867ee17
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_PatientName_in_appointmentsScreen(Test_Search_Functionality_in_FrontDeskRole.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47</td></tr>
+<tr>
+<td title='costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure()'><b>Test_Calculate_Cost_For_Procedure</b><br>Test class: costCalculator_tests.Test_CalculateCost<br>Parameters: Vijay K, Pico Toning, 1000</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;slider round&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81c14d3515c125fc02c1d0af4dd6d16f, findElement {using=xpath, value=//span[@class=&apos;slider round&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52966/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81c14d3515c125fc02c1d0af4dd6d16f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024860730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2024860730'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;slider round&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81c14d3515c125fc02c1d0af4dd6d16f, findElement {using=xpath, value=//span[@class=&apos;slider round&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52966}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52966/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81c14d3515c125fc02c1d0af4dd6d16f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>costCalculator_tests.Test_CalculateCost@5efa40fe</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_PatientName_in_appointmentsScreen()'><b>Test_Search_By_PatientName_in_appointmentsScreen</b><br>Test class: superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [95d13783ff6cffa524eba171d64a0362, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53580/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d13783ff6cffa524eba171d64a0362
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1433068064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1433068064'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Patient&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [95d13783ff6cffa524eba171d64a0362, findElement {using=xpath, value=//label[text()=&apos;Patient&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53580/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95d13783ff6cffa524eba171d64a0362
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_PatientName_in_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>32</td>
+<td>superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Doctor()'><b>Test_FrontDesk_is_able_to_book_session_for_Doctor</b><br>Test class: calendar_booking_tests.Test_Session_Appointment_Booking_Flow</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c589f7fcae857b3a43d52bae8f14620b, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55285/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c589f7fcae857b3a43d52bae8f14620b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Doctor(Test_Session_Appointment_Booking_Flow.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1407633244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1407633244'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c589f7fcae857b3a43d52bae8f14620b, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55285/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c589f7fcae857b3a43d52bae8f14620b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Doctor(Test_Session_Appointment_Booking_Flow.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>42</td>
+<td>calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Superdoctor()'><b>Test_FrontDesk_is_able_to_book_session_for_Superdoctor</b><br>Test class: calendar_booking_tests.Test_Session_Appointment_Booking_Flow</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35ebbe9febb0b37ee83fba486cbdb036, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35ebbe9febb0b37ee83fba486cbdb036
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Superdoctor(Test_Session_Appointment_Booking_Flow.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace386435875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386435875'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35ebbe9febb0b37ee83fba486cbdb036, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35ebbe9febb0b37ee83fba486cbdb036
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Superdoctor(Test_Session_Appointment_Booking_Flow.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>41</td>
+<td>calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Therapist()'><b>Test_FrontDesk_is_able_to_book_session_for_Therapist</b><br>Test class: calendar_booking_tests.Test_Session_Appointment_Booking_Flow</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2667ff808757b1eea3dfe94e176af43f, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55368/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2667ff808757b1eea3dfe94e176af43f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Therapist(Test_Session_Appointment_Booking_Flow.java:192)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213828789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace213828789'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Type Patient Name&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2667ff808757b1eea3dfe94e176af43f, findElement {using=xpath, value=//input[@placeholder=&apos;Type Patient Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55368/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2667ff808757b1eea3dfe94e176af43f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at calendar_booking_tests.Test_Session_Appointment_Booking_Flow.Test_FrontDesk_is_able_to_book_session_for_Therapist(Test_Session_Appointment_Booking_Flow.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>42</td>
+<td>calendar_booking_tests.Test_Session_Appointment_Booking_Flow@311bf055</td></tr>
+<tr>
+<td title='costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure()'><b>Test_Calculate_Cost_For_Procedure</b><br>Test class: costCalculator_tests.Test_CalculateCost<br>Parameters: Smaran, Dermal Fillers, 500</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;slider round&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fab206bd37237fac2bfebb88b4b20d8, findElement {using=xpath, value=//span[@class=&apos;slider round&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52927/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fab206bd37237fac2bfebb88b4b20d8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace328140385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace328140385'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;slider round&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fab206bd37237fac2bfebb88b4b20d8, findElement {using=xpath, value=//span[@class=&apos;slider round&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52927/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fab206bd37237fac2bfebb88b4b20d8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at costCalculator_tests.Test_CalculateCost.Test_Calculate_Cost_For_Procedure(Test_CalculateCost.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>costCalculator_tests.Test_CalculateCost@5efa40fe</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_DoctorNamein_appointmentsScreen()'><b>Test_Search_By_DoctorNamein_appointmentsScreen</b><br>Test class: superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Doctor&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e20bd23b3126cd08cc2fcbdbb69d9954, findElement {using=xpath, value=//label[text()=&apos;Doctor&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53495/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e20bd23b3126cd08cc2fcbdbb69d9954
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_DoctorNamein_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1934770572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1934770572'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;Doctor&apos;]&quot;}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e20bd23b3126cd08cc2fcbdbb69d9954, findElement {using=xpath, value=//label[text()=&apos;Doctor&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\dpran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53495/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e20bd23b3126cd08cc2fcbdbb69d9954
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_DoctorNamein_appointmentsScreen(Test_SearchFunctionality_in_SuperDoctor_Role.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>32</td>
+<td>superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_DoctorNamein_ConsultationsScreen()'><b>Test_Search_By_DoctorNamein_ConsultationsScreen</b><br>Test class: superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role</td>
+<td></td>
+<td>15</td>
+<td>superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871</td></tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Samuel, 10000, Card</td>
+<td></td>
+<td>23</td>
+<td>payments_tests.Test_Create_RetainerInvoice@69ee81fc</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_Create_CreditNote_For_Product()'><b>Test_Create_CreditNote_For_Product</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Abhilash, New Credit Note, Product, 10, 150</td>
+<td></td>
+<td>26</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_SuperAdmin_is_able_to_Login_Application()'><b>Test_SuperAdmin_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>18</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen.Test_FrontDesk_is_able_to_check_ScheduledSessions()'><b>Test_FrontDesk_is_able_to_check_ScheduledSessions</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen</td>
+<td></td>
+<td>14</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455</td></tr>
+<tr>
+<td title='doctor_tests.Test_SearxhFunctionality_in_Doctor_Role.Test_Search_By_PatientName_in_ConsultationsScreen()'><b>Test_Search_By_PatientName_in_ConsultationsScreen</b><br>Test class: doctor_tests.Test_SearxhFunctionality_in_Doctor_Role</td>
+<td></td>
+<td>14</td>
+<td>doctor_tests.Test_SearxhFunctionality_in_Doctor_Role@49b2a47d</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Consultation_Appointment_Flow.Test_FrontDesk_is_able_to_book_consultation_appointment()'><b>Test_FrontDesk_is_able_to_book_consultation_appointment</b><br>Test class: calendar_booking_tests.Test_Consultation_Appointment_Flow</td>
+<td></td>
+<td>29</td>
+<td>calendar_booking_tests.Test_Consultation_Appointment_Flow@5be1d0a4</td></tr>
+<tr>
+<td title='consultant_tests.Test_Consultant_is_able_to_access_filters.Test_Consultant_is_able_to_apply_Consultationfilter_in_appointmentsScreen()'><b>Test_Consultant_is_able_to_apply_Consultationfilter_in_appointmentsScreen</b><br>Test class: consultant_tests.Test_Consultant_is_able_to_access_filters</td>
+<td></td>
+<td>11</td>
+<td>consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Test_Create_CreditNote_From_Invoice()'><b>Test_Create_CreditNote_From_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Sakshi D</td>
+<td></td>
+<td>16</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@f58853c</td></tr>
+<tr>
+<td title='costCalculator_tests.Test_CalculateCost.Test_SuperDoctor_View_Quotation()'><b>Test_SuperDoctor_View_Quotation</b><br>Test class: costCalculator_tests.Test_CalculateCost</td>
+<td></td>
+<td>13</td>
+<td>costCalculator_tests.Test_CalculateCost@5efa40fe</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_AllFilter()'><b>Test_FrontDesk_is_able_to_AllFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>15</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status.Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkout()'><b>Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkout</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>11</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_CreditNote_Filters_Open()'><b>Test_CreditNote_Filters_Open</b><br>Test class: payments_tests.Test_NewCreditNote</td>
+<td></td>
+<td>14</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_SuperDoctor_is_able_to_Login_Application()'><b>Test_SuperDoctor_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>20</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status.Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Confirmed()'><b>Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Confirmed</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>11</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390</td></tr>
+<tr>
+<td title='consultant_tests.Test_Consultant_is_able_to_access_filters.Test_Consultant_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()'><b>Test_Consultant_is_able_to_apply_Counsellingfilter_in_appointmentsScreen</b><br>Test class: consultant_tests.Test_Consultant_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen.Test_FrontDesk_is_able_to_check_DraftedSessions()'><b>Test_FrontDesk_is_able_to_check_DraftedSessions</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen</td>
+<td></td>
+<td>15</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment.Test_Mobility_Fixed_Filter_in_Equipments()'><b>Test_Mobility_Fixed_Filter_in_Equipments</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment</td>
+<td></td>
+<td>10</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room.Test_Search_Functionality_in_Rooms()'><b>Test_Search_Functionality_in_Rooms</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room</td>
+<td></td>
+<td>9</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Test_Create_CreditNote_From_Invoice()'><b>Test_Create_CreditNote_From_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Kalpana</td>
+<td></td>
+<td>15</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@f58853c</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen.Test_FrontDesk_is_able_to_check_CancelledSessions()'><b>Test_FrontDesk_is_able_to_check_CancelledSessions</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen</td>
+<td></td>
+<td>17</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_procedure_screen@7486b455</td></tr>
+<tr>
+<td title='doctor_tests.Test_Doctor_is_able_to_access_filters.Test_Doctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen()'><b>Test_Doctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen</b><br>Test class: doctor_tests.Test_Doctor_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861</td></tr>
+<tr>
+<td title='accountant_tests.Test_Accountant_is_able_to_make_Payment.Test_Accountant_is_able_to_make_Payment()'><b>Test_Accountant_is_able_to_make_Payment</b><br>Test class: accountant_tests.Test_Accountant_is_able_to_make_Payment</td>
+<td></td>
+<td>0</td>
+<td>accountant_tests.Test_Accountant_is_able_to_make_Payment@2f67a4d3</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role.Test_Search_By_PatientName_in_ConsultationsScreen()'><b>Test_Search_By_PatientName_in_ConsultationsScreen</b><br>Test class: superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role</td>
+<td></td>
+<td>17</td>
+<td>superdoctor_tests.Test_SearchFunctionality_in_SuperDoctor_Role@700fb871</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status.Test_FrontDesk_is_able_to_change_patient_journey_status_to_Confirmed()'><b>Test_FrontDesk_is_able_to_change_patient_journey_status_to_Confirmed</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>12</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb</td></tr>
+<tr>
+<td title='patients_tests.Test_NewPatients_Registration.Test_Patient_Image_Upload()'><b>Test_Patient_Image_Upload</b><br>Test class: patients_tests.Test_NewPatients_Registration<br>Parameters: Sumit Kale</td>
+<td></td>
+<td>23</td>
+<td>patients_tests.Test_NewPatients_Registration@1c9b0314</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation.Test_SuperDoctor_is_able_to_add_consultation()'><b>Test_SuperDoctor_is_able_to_add_consultation</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation</td>
+<td></td>
+<td>23</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa</td></tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Vijay K, 6000, UPI</td>
+<td></td>
+<td>19</td>
+<td>payments_tests.Test_Create_RetainerInvoice@69ee81fc</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters.Test_SuperDoctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen()'><b>Test_SuperDoctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229</td></tr>
+<tr>
+<td title='doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status.Test_Doctor_Booking_Consultation_Appointment()'><b>Test_Doctor_Booking_Consultation_Appointment</b><br>Test class: doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>38</td>
+<td>doctor_tests.Test_Doctor_is_able_to_change_patient_journey_status@2fb0623e</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar.Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session()'><b>Test_FrontDesk_is_able_to_MakePayment_For_Counselling_Session</b><br>Test class: calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar</td>
+<td></td>
+<td>34</td>
+<td>calendar_booking_tests.Test_Make_Payment_For_Counselling_Session_From_Calendar@6d5620ce</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_Apply_PatientStaus_AllFilter()'><b>Test_FrontDesk_is_able_to_Apply_PatientStaus_AllFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>13</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='doctor_tests.Test_Doctor_is_able_to_access_filters.Test_Doctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen()'><b>Test_Doctor_is_able_to_apply_Sessionfilter_in_appointmentsScreen</b><br>Test class: doctor_tests.Test_Doctor_is_able_to_access_filters</td>
+<td></td>
+<td>9</td>
+<td>doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room.Test_SuperDoctor_is_Able_To_AddNew_Room()'><b>Test_SuperDoctor_is_Able_To_AddNew_Room</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room</td>
+<td></td>
+<td>15</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_Able_To_AddNew_Room@9816741</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_DoctorNamein_ConsultationsScreen()'><b>Test_Search_By_DoctorNamein_ConsultationsScreen</b><br>Test class: frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole</td>
+<td></td>
+<td>16</td>
+<td>frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_Therpist_is_able_to_Login_Application()'><b>Test_Therpist_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>17</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='payments_tests.Test_Deleting_CreditNote.Test_Delete_Recently_Created_CreditNote()'><b>Test_Delete_Recently_Created_CreditNote</b><br>Test class: payments_tests.Test_Deleting_CreditNote<br>Parameters: Vijay K, New Credit Note, Procedure, 1</td>
+<td></td>
+<td>34</td>
+<td>payments_tests.Test_Deleting_CreditNote@1224144a</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_CreditNote_Filters_Close()'><b>Test_CreditNote_Filters_Close</b><br>Test class: payments_tests.Test_NewCreditNote</td>
+<td></td>
+<td>15</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='payments_tests.Test_Deleting_CreditNote.Test_Delete_Recently_Created_CreditNote()'><b>Test_Delete_Recently_Created_CreditNote</b><br>Test class: payments_tests.Test_Deleting_CreditNote<br>Parameters: Abhilash, New Credit Note, Procedure, 2</td>
+<td></td>
+<td>34</td>
+<td>payments_tests.Test_Deleting_CreditNote@1224144a</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Create_Feedback()'><b>Create_Feedback</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>10</td>
+<td>feedback_tests.Test_NewFeedback@1b1cfb87</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_Apply_PatientStaus_EngagedFilter()'><b>Test_FrontDesk_is_able_to_Apply_PatientStaus_EngagedFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>13</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_Create_CreditNote_For_Product()'><b>Test_Create_CreditNote_For_Product</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Vijay K, New Credit Note, Product, 20, 120</td>
+<td></td>
+<td>25</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole.Test_Search_By_PatientName_in_ConsultationsScreen()'><b>Test_Search_By_PatientName_in_ConsultationsScreen</b><br>Test class: frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole</td>
+<td></td>
+<td>15</td>
+<td>frontdesk_tests.Test_Search_Functionality_in_FrontDeskRole@5d908d47</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters.Test_SuperDoctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen()'><b>Test_SuperDoctor_is_able_to_apply_Consultationfilter_in_appointmentsScreen</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters</td>
+<td></td>
+<td>9</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_DraftFilter()'><b>Test_FrontDesk_is_able_to_DraftFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>16</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_Create_CreditNote_For_Procedure()'><b>Test_Create_CreditNote_For_Procedure</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Vijay K, New Credit Note, Procedure, 1, 3000</td>
+<td></td>
+<td>27</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='patients_tests.Test_NewPatients_Registration.Test_RegisterNew_Patient_With_Unique_PhoneNumber()'><b>Test_RegisterNew_Patient_With_Unique_PhoneNumber</b><br>Test class: patients_tests.Test_NewPatients_Registration<br>Parameters: Sumit Kale</td>
+<td></td>
+<td>16</td>
+<td>patients_tests.Test_NewPatients_Registration@1c9b0314</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckinFilter()'><b>Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckinFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>15</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='payments_tests.Test_Create_RetainerInvoice.Create_New_RetainerInvoice()'><b>Create_New_RetainerInvoice</b><br>Test class: payments_tests.Test_Create_RetainerInvoice<br>Parameters: Pranit Dhole, 50000, Cash</td>
+<td></td>
+<td>22</td>
+<td>payments_tests.Test_Create_RetainerInvoice@69ee81fc</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_FrontDesk_is_able_to_Login_Application()'><b>Test_FrontDesk_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>17</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckOutFilter()'><b>Test_FrontDesk_is_able_to_Apply_PatientStaus_CheckOutFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>15</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment.Test_SuperDoctor_is_able_to_add_new_Equipment()'><b>Test_SuperDoctor_is_able_to_add_new_Equipment</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment</td>
+<td></td>
+<td>8</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_Consultatnt_is_able_to_Login_Application()'><b>Test_Consultatnt_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>16</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='payments_tests.Test_Calculations_In_Payments.Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit()'><b>Test_Total_Amount_BasedOn_UnitQuantity_CostPerUnit</b><br>Test class: payments_tests.Test_Calculations_In_Payments<br>Parameters: Abhilash, New Credit Note, Product</td>
+<td></td>
+<td>25</td>
+<td>payments_tests.Test_Calculations_In_Payments@49c90a9c</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status.Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Engaged()'><b>Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Engaged</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>13</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_Doctor_is_able_to_Login_Application()'><b>Test_Doctor_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>19</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='calendar_booking_tests.Test_Counselling_Appointment_Flow.Test_FrontDesk_is_able_to_book_Counselling_appointment()'><b>Test_FrontDesk_is_able_to_book_Counselling_appointment</b><br>Test class: calendar_booking_tests.Test_Counselling_Appointment_Flow</td>
+<td></td>
+<td>42</td>
+<td>calendar_booking_tests.Test_Counselling_Appointment_Flow@415b0b49</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status.Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkout()'><b>Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkout</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>12</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390</td></tr>
+<tr>
+<td title='payments_tests.Test_NewCreditNote.Test_Create_CreditNote_For_Procedure()'><b>Test_Create_CreditNote_For_Procedure</b><br>Test class: payments_tests.Test_NewCreditNote<br>Parameters: Abhilash, New Credit Note, Procedure, 2, 1500</td>
+<td></td>
+<td>26</td>
+<td>payments_tests.Test_NewCreditNote@29f7cefd</td></tr>
+<tr>
+<td title='login_Roles_tests.Test_Login_For_Different_Roles.Test_Manager_is_able_to_Login_Application()'><b>Test_Manager_is_able_to_Login_Application</b><br>Test class: login_Roles_tests.Test_Login_For_Different_Roles</td>
+<td></td>
+<td>18</td>
+<td>login_Roles_tests.Test_Login_For_Different_Roles@1f9f6368</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status.Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkin()'><b>Test_FrontDesk_is_able_to_change_patient_journey_status_to_Checkin</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>31</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb</td></tr>
+<tr>
+<td title='payments_tests.Test_Calender_Functionality_In_Payments.Test_Invoice_Calender_Opening()'><b>Test_Invoice_Calender_Opening</b><br>Test class: payments_tests.Test_Calender_Functionality_In_Payments</td>
+<td></td>
+<td>0</td>
+<td>payments_tests.Test_Calender_Functionality_In_Payments@2d29b4ee</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment.Test_Mobility_Mobile_Filter_in_Equipments()'><b>Test_Mobility_Mobile_Filter_in_Equipments</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment</td>
+<td></td>
+<td>16</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment.Test_Search_in_Equipments()'><b>Test_Search_in_Equipments</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment</td>
+<td></td>
+<td>10</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_add_new_Equipment@13d73f29</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Test_Delete_CreditNote_Invoice()'><b>Test_Delete_CreditNote_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Sakshi D</td>
+<td></td>
+<td>19</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@f58853c</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters.Test_FrontDesk_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()'><b>Test_FrontDesk_is_able_to_apply_Counsellingfilter_in_appointmentsScreen</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9</td></tr>
+<tr>
+<td title='payments_tests.Test_Calculations_In_CreditNotes.Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit()'><b>Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit</b><br>Test class: payments_tests.Test_Calculations_In_CreditNotes<br>Parameters: Vijay K, New Credit Note, Procedure, 1</td>
+<td></td>
+<td>21</td>
+<td>payments_tests.Test_Calculations_In_CreditNotes@45385f75</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters.Test_FrontDesk_is_able_to_apply_Consultationfilter_in_appointmentsScreen()'><b>Test_FrontDesk_is_able_to_apply_Consultationfilter_in_appointmentsScreen</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters</td>
+<td></td>
+<td>12</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9</td></tr>
+<tr>
+<td title='doctor_tests.Test_Doctor_is_able_to_access_filters.Test_Doctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()'><b>Test_Doctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen</b><br>Test class: doctor_tests.Test_Doctor_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>doctor_tests.Test_Doctor_is_able_to_access_filters@5e3f861</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters.Test_FrontDesk_is_able_to_apply_Sessionfilter_in_appointmentsScreen()'><b>Test_FrontDesk_is_able_to_apply_Sessionfilter_in_appointmentsScreen</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters</td>
+<td></td>
+<td>9</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters@465232e9</td></tr>
+<tr>
+<td title='consultant_tests.Test_Consultant_is_able_to_access_filters.Test_Consultant_is_able_to_apply_Sessionfilter_in_appointmentsScreen()'><b>Test_Consultant_is_able_to_apply_Sessionfilter_in_appointmentsScreen</b><br>Test class: consultant_tests.Test_Consultant_is_able_to_access_filters</td>
+<td></td>
+<td>11</td>
+<td>consultant_tests.Test_Consultant_is_able_to_access_filters@7dc3712</td></tr>
+<tr>
+<td title='payments_tests.Test_Calculations_In_CreditNotes.Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit()'><b>Test_TotalAmount_InCreditNote_BasedOn_Quantity_And_CostPerUnit</b><br>Test class: payments_tests.Test_Calculations_In_CreditNotes<br>Parameters: Abhilash, New Credit Note, Procedure, 1</td>
+<td></td>
+<td>20</td>
+<td>payments_tests.Test_Calculations_In_CreditNotes@45385f75</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation.Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft()'><b>Test_SuperDoctor_is_able_to_add_consultation_and_save_it_AsDraft</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation</td>
+<td></td>
+<td>14</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_CancelledFilter()'><b>Test_FrontDesk_is_able_to_CancelledFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>14</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters.Test_SuperDoctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen()'><b>Test_SuperDoctor_is_able_to_apply_Counsellingfilter_in_appointmentsScreen</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters</td>
+<td></td>
+<td>10</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_access_filters@3b35a229</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation.Test_SuperDoctor_is_able_to_resume_Drafted_consultation()'><b>Test_SuperDoctor_is_able_to_resume_Drafted_consultation</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation</td>
+<td></td>
+<td>11</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_Add_Consultation@1e16c0aa</td></tr>
+<tr>
+<td title='superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status.Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkin()'><b>Test_SuperDoctor_is_able_to_change_patient_journey_status_to_Checkin</b><br>Test class: superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>31</td>
+<td>superdoctor_tests.Test_SuperDoctor_is_able_to_change_patient_journey_status@565f390</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Share_Feedback_Through_Whatsapp()'><b>Share_Feedback_Through_Whatsapp</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>12</td>
+<td>feedback_tests.Test_NewFeedback@1b1cfb87</td></tr>
+<tr>
+<td title='payments_tests.Test_CreditNote_from_Invoice.Test_Delete_CreditNote_Invoice()'><b>Test_Delete_CreditNote_Invoice</b><br>Test class: payments_tests.Test_CreditNote_from_Invoice<br>Parameters: Kalpana</td>
+<td></td>
+<td>22</td>
+<td>payments_tests.Test_CreditNote_from_Invoice@f58853c</td></tr>
+<tr>
+<td title='feedback_tests.Test_NewFeedback.Share_Feedback_Through_Mail()'><b>Share_Feedback_Through_Mail</b><br>Test class: feedback_tests.Test_NewFeedback</td>
+<td></td>
+<td>9</td>
+<td>feedback_tests.Test_NewFeedback@1b1cfb87</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen.Test_FrontDesk_is_able_to_ScheduledFilter()'><b>Test_FrontDesk_is_able_to_ScheduledFilter</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen</td>
+<td></td>
+<td>14</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_access_filters_in_consultations_screen@23941fb4</td></tr>
+<tr>
+<td title='frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status.Test_FrontDesk_is_able_to_change_patient_journey_status_to_Engaged()'><b>Test_FrontDesk_is_able_to_change_patient_journey_status_to_Engaged</b><br>Test class: frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status</td>
+<td></td>
+<td>13</td>
+<td>frontdesk_tests.Test_FrontDesk_is_able_to_change_patient_journey_status@660acfb</td></tr>
+</table><p>
+</body>
+</html>
