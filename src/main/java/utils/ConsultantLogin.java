@@ -25,9 +25,9 @@ public class ConsultantLogin {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		WebElement Email= driver.findElement(By.xpath("//input[@placeholder='Enter email address']"));
-		Email.sendKeys("vahesop275@dakcans.com");
+		Email.sendKeys("@dakcans.com");
 		WebElement Pass = driver.findElement(By.xpath("//input[@placeholder='Enter password']"));
-		Pass.sendKeys("Aa123456789");
+		Pass.sendKeys("");
 		WebElement LoginBtn = driver.findElement(By.xpath("//button[text()='Login now']"));
 		LoginBtn.click();
 		}
